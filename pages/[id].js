@@ -3,7 +3,7 @@ import { getAllIds, getData } from '../lib/data';
 
 // define a getStaticProps() function to have next.js retrieve data to use for the dynamic page
 export async function getStaticProps( { params } ) {
-  const itemData = await getData(params.id);
+  const itemData = await getData(params.ID);
   return {
     props: {
       itemData
