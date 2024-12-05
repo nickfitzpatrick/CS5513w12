@@ -4,7 +4,7 @@ import Link from "next/link";
 
 // define a getStaticProps() function 
 export async function getStaticProps() {
-  const allData = getSortedList();
+  const allData = await getSortedList();
   return {
     props: { allData }
   };
@@ -14,7 +14,7 @@ export async function getStaticProps() {
 export default function Home( { allData } ) {
   return (
     <Layout home>
-      <h1>List of Names</h1>
+      <h1>Returned from WP</h1>
       <div className="list-group">
         {allData.map(
             ({id,name}) => (
