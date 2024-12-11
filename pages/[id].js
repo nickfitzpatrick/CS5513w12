@@ -28,7 +28,8 @@ export default function Entry( { itemData } ) {
     <Layout>
       <article className="card col-6">
         <div className="card-body">
-          <h5 className="card-title">{itemData.name}</h5>
+          <h4 className="card-title">{itemData.ID}</h4>
+          <h5 className="card-title">{itemData.post_title}</h5>
         </div>
       </article>
     </Layout>
